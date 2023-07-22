@@ -1,0 +1,363 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.bg-illustration-left {
+  position: absolute;
+  top: 0;
+  left: -250px;
+  width: 40%;
+  height: 85%;
+  background-image: linear-gradient(
+    to bottom left,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  border-radius: 0 0 400px 400px;
+  -webkit-border-radius: 0 0 400px 400px;
+  -moz-border-radius: 0 0 400px 400px;
+  -ms-border-radius: 0 0 400px 400px;
+  -o-border-radius: 0 0 400px 400px;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .bg-illustration-left {
+    left: -100px;
+  }
+}
+.bg-illustration-right {
+  position: absolute;
+  bottom: 0;
+  right: -350px;
+  width: 40%;
+  height: 85%;
+  background-color: hsl(270, 20%, 96%);
+  z-index: -1;
+  border-radius: 400px 400px 0 0;
+  -webkit-border-radius: 400px 400px 0 0;
+  -moz-border-radius: 400px 400px 0 0;
+  -ms-border-radius: 400px 400px 0 0;
+  -o-border-radius: 400px 400px 0 0;
+}
+@media (max-width: 1199px) {
+  .bg-illustration-right {
+    right: 0;
+  }
+}
+.contents-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  padding: 25px;
+}
+@media (max-width: 1199px) {
+  .contents-container {
+    gap: 70px;
+  }
+}
+@media (max-width: 991px) {
+  .contents-container {
+    gap: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .contents-container {
+    flex-direction: column;
+  }
+}
+.phone {
+  width: 350px;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  border: 15px solid white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  overflow: hidden;
+  position: relative;
+}
+.phone header {
+  height: 90px;
+  background-image: linear-gradient(
+    to left,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 15px 15px;
+  position: relative;
+}
+.phone header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  width: 55%;
+  height: 15px;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+  -webkit-border-radius: 0 0 15px 15px;
+  -moz-border-radius: 0 0 15px 15px;
+  -ms-border-radius: 0 0 15px 15px;
+  -o-border-radius: 0 0 15px 15px;
+}
+.phone header .left {
+  display: flex;
+  align-items: center;
+}
+.phone header .left .left-arrow {
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.phone header .left .avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.phone header .left .info h4 {
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.phone header .left .info p {
+  color: hsl(270, 20%, 96%);
+  font-size: 12px;
+  margin-top: 2px;
+}
+.phone header .right .icon {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  cursor: pointer;
+}
+.phone header .right .icon span {
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.phone main {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(270, 20%, 96%);
+  padding: 15px;
+}
+.phone main .left-msg {
+  width: 70%;
+  background-color: #ddd;
+  color: hsl(276, 55%, 52%);
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 10px 10px 10px 5px;
+  -webkit-border-radius: 10px 10px 10px 5px;
+  -moz-border-radius: 10px 10px 10px 5px;
+  -ms-border-radius: 10px 10px 10px 5px;
+  -o-border-radius: 10px 10px 10px 5px;
+}
+.phone main .left-msg:not(:first-child) {
+  margin-top: 10px;
+}
+.phone main .imgs {
+  margin-left: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.phone main .imgs img {
+  width: 50px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+.phone main .right-msg {
+  width: fit-content;
+  max-width: 75%;
+  background-color: white;
+  color: hsl(276, 55%, 52%);
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 10px 10px 5px 10px;
+  -webkit-border-radius: 10px 10px 5px 10px;
+  -moz-border-radius: 10px 10px 5px 10px;
+  -ms-border-radius: 10px 10px 5px 10px;
+  -o-border-radius: 10px 10px 5px 10px;
+  margin-left: auto;
+  margin-top: 10px;
+}
+.phone main .check-offer {
+  max-width: 75%;
+  margin-top: 10px;
+  background-image: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  border-radius: 10px 10px 10px 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: white;
+}
+.phone main .check-offer input {
+  display: none;
+}
+.phone main .check-offer label {
+  font-size: 12px;
+  position: relative;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.phone main .check-offer label::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.phone main .check-offer input:checked + label::before {
+  background-color: hsl(264, 100%, 61%);
+}
+.phone main .check-offer .price {
+  font-weight: 700;
+}
+.phone main .msg-input {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.phone main .msg-input input {
+  border: none;
+  width: 80%;
+}
+.phone main .msg-input input::placeholder {
+  font-size: 14px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.phone main .msg-input input:focus {
+  outline: none;
+}
+.phone main .msg-input input:focus::placeholder {
+  opacity: 0;
+}
+.phone main .msg-input .send-icon {
+  color: white;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.phone main .msg-input .send-icon:hover {
+  background-color: #1c1c1c;
+}
+.txt {
+  max-width: 600px;
+}
+@media (max-width: 1199px) {
+  .txt {
+    max-width: 450px;
+  }
+}
+@media (max-width: 991px) {
+  .txt {
+    max-width: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .txt {
+    text-align: center;
+    max-width: 450px;
+  }
+}
+.txt h1 {
+  font-size: 3em;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+@media (max-width: 991px) {
+  .txt h1 {
+    font-size: 2.5em;
+  }
+}
+.txt p {
+  color: hsl(270, 7%, 64%);
+  line-height: 1.5;
+  font-size: 1.5em;
+}
+@media (max-width: 991px) {
+  .txt p {
+    font-size: 1.25em;
+  }
+}

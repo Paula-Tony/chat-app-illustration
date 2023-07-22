@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Chat App</title>
+  </head>
+  <body>
+    <div class="bg-illustration-left"></div>
+    <div class="bg-illustration-right"></div>
+    <div class="contents-container">
+      <div class="phone">
+        <header>
+          <div class="left">
+            <span class="left-arrow">&lt;</span>
+            <img class="avatar" src="images/avatar.jpg" alt="Profile Picture" />
+            <div class="info">
+              <h4>Samuel Green</h4>
+              <p>Available to Walk</p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </header>
+        <main>
+          <p class="left-msg">That sounds great. I’d be happy with that.</p>
+          <p class="left-msg">
+            Could you send over some pictures of your dog, please?
+          </p>
+          <div class="imgs">
+            <img src="images/dog-image-1.jpg" alt="Dog" />
+            <img src="images/dog-image-2.jpg" alt="Dog" />
+            <img src="images/dog-image-3.jpg" alt="Dog" />
+          </div>
+          <p class="right-msg">Here are a few pictures. She’s a happy girl!</p>
+          <p class="right-msg">Can you make it?</p>
+          <p class="left-msg">
+            She looks so happy! The time we discussed works. How long shall I
+            take her out for?
+          </p>
+          <div class="check-offer">
+            <input type="checkbox" id="check1"/>
+            <label for="check1"> 30 minute walk </label>
+            <p class="price">$29</p>
+          </div>
+          <div class="check-offer">
+            <input type="checkbox" id="check2"/>
+            <label for="check2"> 1 hour walk </label>
+            <p class="price">$49</p>
+          </div>
+          <div class="msg-input">
+            <input type="text" placeholder="Type a message…" />
+            <span class="send-icon"> &gt;</span>
+          </div>
+        </main>
+      </div>
+      <div class="txt">
+        <h1>Simple booking</h1>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
